@@ -162,8 +162,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 .hero-grid{
   max-width:1200px;margin:0 auto;
-  display:grid;grid-template-columns:1.05fr .95fr;
-  gap:3rem;align-items:center;
+  display:flex;flex-direction:column;
+  gap:2.5rem;align-items:stretch;
 }
 .eyebrow{
   display:inline-flex;align-items:center;gap:.6rem;
@@ -234,39 +234,32 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 .hero-tag-main em{font-style:normal;color:var(--gold-light);font-size:1.15em}
 
-/* hero image */
-.hero-visual{position:relative}
+/* hero image - 横長バナー */
+.hero-visual{position:relative;width:100%;order:-1}
 .hero-img{
-  width:100%;aspect-ratio:4/5;
-  border-radius:8px;
+  width:100%;aspect-ratio:24/10;
+  border-radius:10px;
   box-shadow:var(--shadow-lg);
   position:relative;
   overflow:hidden;
 }
 .hero-img::after{
   content:"";position:absolute;inset:0;z-index:3;
-  background:linear-gradient(180deg,transparent 60%,rgba(15,39,64,.3));
+  background:linear-gradient(180deg,transparent 80%,rgba(15,39,64,.15));
   pointer-events:none;
 }
-.pain-marker{
-  position:absolute;top:42%;left:35%;z-index:4;
-  width:80px;height:80px;
-  border-radius:50%;
-  background:radial-gradient(circle,rgba(200,32,43,.6),rgba(200,32,43,0) 70%);
-  animation:pulse 2s ease-in-out infinite;
-  pointer-events:none;
-}
+.pain-marker{display:none}
 @keyframes pulse{
   0%,100%{transform:scale(1);opacity:.7}
   50%{transform:scale(1.15);opacity:1}
 }
 .hero-badge{
-  position:absolute;top:1.25rem;right:-.75rem;z-index:5;
+  position:absolute;top:1rem;right:1rem;z-index:5;
   background:var(--red);color:#fff;
-  width:104px;height:104px;border-radius:50%;
+  width:96px;height:96px;border-radius:50%;
   display:grid;place-items:center;align-content:center;gap:.1rem;
   font-family:var(--serif);font-weight:900;
-  text-align:center;line-height:1.15;font-size:.78rem;
+  text-align:center;line-height:1.15;font-size:.75rem;
   box-shadow:var(--shadow-md);
   border:3px solid #fff;
   transform:rotate(-8deg);
@@ -276,12 +269,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 
 @media(max-width:880px){
   .hero{padding:2.5rem 1.25rem 3rem}
-  .hero-grid{grid-template-columns:1fr;gap:1.5rem}
-  .hero-visual{order:-1;max-width:420px;margin:0 auto}
-  .hero-img{aspect-ratio:5/4}
+  .hero-grid{gap:2rem}
+  .hero-img{aspect-ratio:16/9}
 }
 @media(max-width:480px){
-  .hero{padding:2rem 1rem 2.5rem}
+  .hero{padding:1.75rem 1rem 2.5rem}
+  .hero-grid{gap:1.5rem}
+  .hero-img{aspect-ratio:5/3;border-radius:8px}
   .hero h1{font-size:1.55rem;line-height:1.5}
   .hero h1 .lead{font-size:.78em;line-height:1.6}
   .hero-checks li{font-size:.95rem;padding-bottom:.55rem}
@@ -290,13 +284,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .hero-tag-label{font-size:.7rem;letter-spacing:.15em}
   .hero-tag-main{font-size:1.15rem}
   .hero-badge{
-    width:80px;height:80px;
-    top:.75rem;right:-.25rem;
-    font-size:.65rem;border-width:2px;
+    width:72px;height:72px;
+    top:.6rem;right:.6rem;
+    font-size:.6rem;border-width:2px;
   }
-  .hero-badge strong{font-size:1rem !important}
-  .hero-badge small{font-size:.6rem}
-  .pain-marker{width:60px;height:60px}
+  .hero-badge strong{font-size:.9rem !important}
+  .hero-badge small{font-size:.55rem}
 }
 
 /* ===== SECTION COMMON ===== */
@@ -921,6 +914,18 @@ section{padding:4.5rem 1.5rem}
 <!-- ============== HERO ============== -->
 <section class="hero">
   <div class="hero-grid">
+    <div class="hero-visual reveal">
+      <!-- ▼ HERO バナー画像: images/hero.jpg（横長バナー / 推奨 2000×800 前後） -->
+      <div class="hero-img img-frame">
+        <span class="img-placeholder-text">HERO BANNER<br>images/hero.jpg</span>
+        <img src="images/hero.jpg" alt="つらい思いをしている人たちを助けたい" onerror="this.style.display='none'">
+      </div>
+      <div class="hero-badge">
+        <small>医師も</small>
+        <strong style="font-family:var(--serif);font-size:1.2rem;line-height:1.2">絶賛</strong>
+        <small>の整体</small>
+      </div>
+    </div>
     <div>
       <div class="eyebrow reveal">For Hernia &amp; Sciatica</div>
       <h1 class="reveal">
@@ -936,19 +941,6 @@ section{padding:4.5rem 1.5rem}
       <div class="hero-tag reveal">
         <div class="hero-tag-label">姿勢 × 骨格 × 神経 へのアプローチで</div>
         <div class="hero-tag-main"><em>根本改善</em>を目指します</div>
-      </div>
-    </div>
-    <div class="hero-visual reveal">
-      <!-- ▼ HERO 画像: images/hero.jpg を差し替え -->
-      <div class="hero-img img-frame">
-        <span class="img-placeholder-text">HERO IMAGE<br>images/hero.jpg</span>
-        <img src="images/hero.jpg" alt="ヘルニア・坐骨神経痛の施術" onerror="this.style.display='none'">
-        <div class="pain-marker"></div>
-      </div>
-      <div class="hero-badge">
-        <small>医師も</small>
-        <strong style="font-family:var(--serif);font-size:1.25rem;line-height:1.2">絶賛</strong>
-        <small>の整体</small>
       </div>
     </div>
   </div>
