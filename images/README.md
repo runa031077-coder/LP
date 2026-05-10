@@ -1,3 +1,4 @@
+<img width="2048" height="944" alt="logo png" src="https://github.com/user-attachments/assets/c8d09207-f06d-4466-9414-c21f03d7d8ca" />
 # 画像配置ガイド
 
 このフォルダに以下のファイル名で画像を配置すると、`index.html` から自動で読み込まれます。
