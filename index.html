@@ -1,1 +1,1444 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヘルニア・坐骨神経痛 根本改善専門 | 夢の鍼灸整骨院・整体院</title>
+<meta name="description" content="病院や他の整体で良くならなかったヘルニア・坐骨神経痛にお悩みのあなたへ。姿勢×骨格×神経へのアプローチで根本改善を目指します。松戸市内4店舗＋北習志野の計5店舗。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700;900&family=Noto+Sans+JP:wght@400;500;700;900&family=Cormorant+Garamond:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f2740;
+  --navy-deep:#091a2c;
+  --gold:#c9a961;
+  --gold-light:#e4cb8e;
+  --red:#c8202b;
+  --red-deep:#9b1820;
+  --cream:#faf6ee;
+  --cream-deep:#f1ead8;
+  --ink:#1a1a1a;
+  --ink-soft:#3a3a3a;
+  --line:#e8e1d0;
+  --green:#1f4d3a;
+  --shadow-sm:0 2px 12px rgba(15,39,64,.08);
+  --shadow-md:0 8px 32px rgba(15,39,64,.12);
+  --shadow-lg:0 20px 60px rgba(15,39,64,.18);
+  --serif:'Noto Serif JP', serif;
+  --sans:'Noto Sans JP', sans-serif;
+  --display:'Cormorant Garamond', 'Noto Serif JP', serif;
+}
 
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--sans);
+  color:var(--ink);
+  background:var(--cream);
+  line-height:1.7;
+  font-feature-settings:"palt";
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+
+/* ===== 画像プレースホルダー =====
+   差し替え用画像は <img> タグで埋め込む方式。
+   画像が無い時は親要素の placeholder テキストが表示される */
+.img-frame{
+  position:relative;
+  background:var(--cream-deep);
+  overflow:hidden;
+  border-radius:8px;
+}
+.img-frame > img{
+  width:100%;height:100%;object-fit:cover;display:block;
+  position:relative;z-index:2;
+}
+.img-placeholder-text{
+  position:absolute;inset:0;z-index:1;
+  display:grid;place-items:center;
+  font-family:var(--display);font-size:.85rem;letter-spacing:.2em;
+  color:rgba(15,39,64,.4);text-transform:uppercase;font-weight:700;
+  background:repeating-linear-gradient(45deg,var(--cream-deep) 0 12px,#ece2c8 12px 24px);
+  pointer-events:none;
+  text-align:center;padding:.5rem;
+}
+
+/* ===== TOP BAR ===== */
+.topbar{
+  background:var(--navy-deep);
+  color:#fff;
+  padding:.5rem 1.25rem;
+  font-size:.78rem;
+  text-align:center;
+  letter-spacing:.05em;
+}
+.topbar strong{color:var(--gold-light);font-weight:700;letter-spacing:.1em}
+
+/* ===== HEADER ===== */
+.header{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,246,238,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+}
+.header-inner{
+  max-width:1200px;margin:0 auto;
+  padding:.85rem 1.5rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+}
+.logo{display:flex;align-items:center;gap:.6rem}
+.logo-mark{
+  width:38px;height:38px;border-radius:50%;
+  background:linear-gradient(135deg,var(--navy),var(--navy-deep));
+  display:grid;place-items:center;
+  color:var(--gold-light);font-family:var(--display);font-size:1.35rem;font-weight:700;
+  box-shadow:var(--shadow-sm);
+  overflow:hidden;
+  position:relative;
+}
+.logo-mark::before{
+  content:"夢";position:absolute;inset:0;
+  display:grid;place-items:center;
+  font-family:var(--serif);font-weight:900;
+}
+.logo-mark img{width:100%;height:100%;object-fit:cover;position:relative;z-index:2}
+.logo-text{display:flex;flex-direction:column;line-height:1.1}
+.logo-text small{font-family:var(--display);font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
+.logo-text span{font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--navy)}
+.header-cta{display:flex;align-items:center;gap:.75rem}
+.tel{
+  display:flex;align-items:center;gap:.4rem;
+  font-family:var(--display);font-weight:700;font-size:1.25rem;color:var(--navy);
+}
+.tel svg{width:18px;height:18px;color:var(--red)}
+.btn-line{
+  background:#06c755;color:#fff;
+  padding:.6rem 1.1rem;border-radius:999px;
+  font-weight:700;font-size:.85rem;
+  display:inline-flex;align-items:center;gap:.4rem;
+  box-shadow:0 4px 14px rgba(6,199,85,.35);
+  transition:transform .2s, box-shadow .2s;
+}
+.btn-line:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(6,199,85,.5)}
+@media(max-width:720px){
+  .tel{display:none}
+  .header-inner{padding:.75rem 1rem}
+}
+
+/* ===== HERO ===== */
+.hero{
+  position:relative;
+  background:
+    radial-gradient(ellipse at top right, rgba(201,169,97,.12), transparent 55%),
+    linear-gradient(180deg, #fefcf6 0%, var(--cream) 100%);
+  overflow:hidden;
+  padding:3.5rem 1.5rem 4.5rem;
+}
+.hero::before{
+  content:"";position:absolute;top:-100px;right:-100px;
+  width:480px;height:480px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,169,97,.18),transparent 70%);
+  pointer-events:none;
+}
+.hero::after{
+  content:"";position:absolute;bottom:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,var(--gold) 30%,var(--gold) 70%,transparent);
+  opacity:.4;
+}
+.hero-grid{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1.05fr .95fr;
+  gap:3rem;align-items:center;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-family:var(--display);font-size:.78rem;
+  letter-spacing:.4em;text-transform:uppercase;
+  color:var(--gold);font-weight:600;
+  margin-bottom:1.25rem;
+}
+.eyebrow::before,.eyebrow::after{
+  content:"";width:32px;height:1px;background:var(--gold);
+}
+.hero h1{
+  font-family:var(--serif);
+  font-weight:900;
+  font-size:clamp(1.75rem,3.6vw,2.85rem);
+  line-height:1.35;
+  color:var(--navy);
+  letter-spacing:-.01em;
+  margin-bottom:1.5rem;
+}
+.hero h1 .lead{
+  display:block;font-size:.7em;font-weight:500;color:var(--ink-soft);
+  margin-bottom:.6rem;letter-spacing:0;
+}
+.hero h1 .accent{
+  display:inline-block;
+  background:linear-gradient(180deg,transparent 60%,rgba(200,32,43,.15) 60%);
+  color:var(--red);font-weight:900;
+  padding:0 .15em;
+}
+.hero-checks{
+  list-style:none;
+  display:grid;gap:.75rem;
+  margin-bottom:2rem;
+}
+.hero-checks li{
+  display:flex;align-items:flex-start;gap:.75rem;
+  font-size:1.05rem;font-weight:500;color:var(--ink);
+  padding-bottom:.65rem;
+  border-bottom:1px dashed var(--line);
+}
+.hero-checks li::before{
+  content:"";flex-shrink:0;
+  width:22px;height:22px;border-radius:5px;
+  background:var(--navy);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c9a961' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size:14px;background-repeat:no-repeat;background-position:center;
+  margin-top:3px;
+}
+.hero-tag{
+  background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);
+  color:#fff;
+  padding:1.5rem 1.75rem;
+  border-radius:6px;
+  position:relative;
+  box-shadow:var(--shadow-md);
+  border-left:4px solid var(--gold);
+}
+.hero-tag-label{
+  font-size:.78rem;letter-spacing:.25em;
+  color:var(--gold-light);font-weight:600;
+  margin-bottom:.5rem;
+}
+.hero-tag-main{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(1.3rem,2.3vw,1.8rem);
+  line-height:1.4;
+}
+.hero-tag-main em{font-style:normal;color:var(--gold-light);font-size:1.15em}
+
+/* hero image */
+.hero-visual{position:relative}
+.hero-img{
+  width:100%;aspect-ratio:4/5;
+  border-radius:8px;
+  box-shadow:var(--shadow-lg);
+  position:relative;
+  overflow:hidden;
+}
+.hero-img::after{
+  content:"";position:absolute;inset:0;z-index:3;
+  background:linear-gradient(180deg,transparent 60%,rgba(15,39,64,.3));
+  pointer-events:none;
+}
+.pain-marker{
+  position:absolute;top:42%;left:35%;z-index:4;
+  width:80px;height:80px;
+  border-radius:50%;
+  background:radial-gradient(circle,rgba(200,32,43,.6),rgba(200,32,43,0) 70%);
+  animation:pulse 2s ease-in-out infinite;
+  pointer-events:none;
+}
+@keyframes pulse{
+  0%,100%{transform:scale(1);opacity:.7}
+  50%{transform:scale(1.15);opacity:1}
+}
+.hero-badge{
+  position:absolute;top:1.25rem;right:-.75rem;z-index:5;
+  background:var(--red);color:#fff;
+  width:104px;height:104px;border-radius:50%;
+  display:grid;place-items:center;align-content:center;gap:.1rem;
+  font-family:var(--serif);font-weight:900;
+  text-align:center;line-height:1.15;font-size:.78rem;
+  box-shadow:var(--shadow-md);
+  border:3px solid #fff;
+  transform:rotate(-8deg);
+}
+.hero-badge small{font-size:.7rem;font-weight:500;color:rgba(255,255,255,.95)}
+.hero-badge strong{display:block;color:#fff}
+
+@media(max-width:880px){
+  .hero{padding:2.5rem 1.25rem 3rem}
+  .hero-grid{grid-template-columns:1fr;gap:2rem}
+  .hero-visual{order:-1;max-width:420px;margin:0 auto}
+  .hero-img{aspect-ratio:5/4}
+}
+
+/* ===== SECTION COMMON ===== */
+section{padding:4.5rem 1.5rem}
+.container{max-width:1080px;margin:0 auto}
+.section-head{text-align:center;margin-bottom:3rem}
+.section-eyebrow{
+  font-family:var(--display);
+  font-size:.85rem;letter-spacing:.45em;
+  color:var(--gold);font-weight:600;text-transform:uppercase;
+  display:inline-block;margin-bottom:.75rem;
+}
+.section-title{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(1.6rem,3vw,2.4rem);
+  color:var(--navy);
+  line-height:1.4;
+  letter-spacing:-.01em;
+}
+.section-title em{font-style:normal;color:var(--red)}
+.section-sub{
+  margin-top:1rem;color:var(--ink-soft);
+  font-size:1rem;line-height:1.85;
+}
+
+/* ===== EMPATHY ===== */
+.empathy{background:#fff;position:relative}
+.empathy::before{
+  content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);
+  width:80px;height:4px;background:var(--gold);border-radius:2px;
+}
+.empathy-grid{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:3rem;align-items:center;
+}
+.empathy-list{list-style:none;display:grid;gap:1rem}
+.empathy-item{
+  display:flex;align-items:center;gap:1rem;
+  padding:1.1rem 1.25rem;
+  background:var(--cream);
+  border-radius:8px;
+  border-left:3px solid var(--gold);
+  font-size:1.02rem;font-weight:500;
+  transition:transform .25s, box-shadow .25s;
+}
+.empathy-item:hover{transform:translateX(4px);box-shadow:var(--shadow-sm)}
+.empathy-item-num{
+  font-family:var(--display);font-weight:700;
+  font-size:1.2rem;color:var(--gold);
+  flex-shrink:0;
+}
+.empathy-image{
+  aspect-ratio:1/1;
+  box-shadow:var(--shadow-md);
+}
+@media(max-width:780px){
+  .empathy-grid{grid-template-columns:1fr;gap:2rem}
+  .empathy-image{max-width:380px;margin:0 auto;aspect-ratio:5/4}
+}
+
+/* ===== CAUSE ===== */
+.cause{
+  background:linear-gradient(180deg,var(--cream) 0%,var(--cream-deep) 100%);
+  position:relative;
+}
+.cause-headline{
+  text-align:center;
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(1.5rem,2.8vw,2.2rem);
+  color:var(--navy);line-height:1.5;
+  margin-bottom:1.25rem;
+}
+.cause-headline .mark{
+  display:inline-block;padding:.05em .35em;
+  background:var(--navy);color:var(--gold-light);
+  border-radius:4px;margin:0 .15em;
+}
+.cause-desc{
+  text-align:center;color:var(--ink-soft);
+  font-size:1.02rem;max-width:680px;margin:0 auto 3rem;
+}
+.cause-pillars{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1rem;align-items:stretch;
+  position:relative;
+}
+.pillar{
+  background:#fff;
+  border-radius:10px;
+  padding:1.75rem 1rem;
+  text-align:center;
+  box-shadow:var(--shadow-sm);
+  border-top:3px solid var(--gold);
+  position:relative;
+  transition:transform .3s;
+}
+.pillar:hover{transform:translateY(-6px)}
+.pillar-icon{
+  width:64px;height:64px;
+  margin:0 auto 1rem;
+  border-radius:50%;
+  background:linear-gradient(135deg,var(--navy),var(--navy-deep));
+  display:grid;place-items:center;
+  color:var(--gold-light);
+}
+.pillar-icon svg{width:30px;height:30px;stroke-width:1.5}
+.pillar-num{
+  font-family:var(--display);font-style:italic;
+  font-size:.9rem;color:var(--gold);
+  letter-spacing:.15em;margin-bottom:.4rem;
+}
+.pillar h3{
+  font-family:var(--serif);font-weight:700;
+  font-size:1.05rem;color:var(--navy);
+  line-height:1.4;
+}
+.plus{
+  position:absolute;top:50%;right:-.75rem;
+  transform:translate(50%,-50%);
+  width:28px;height:28px;border-radius:50%;
+  background:var(--gold);color:#fff;
+  display:grid;place-items:center;
+  font-weight:900;z-index:2;
+  box-shadow:var(--shadow-sm);
+}
+@media(max-width:780px){
+  .cause-pillars{grid-template-columns:repeat(2,1fr)}
+  .plus:nth-child(2)::after{display:none}
+  .pillar:nth-child(2) .plus{display:none}
+}
+
+/* ===== BEFORE/AFTER ===== */
+.results{background:#fff}
+.ba-card{
+  background:linear-gradient(180deg,#fff,var(--cream));
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:2rem;
+  box-shadow:var(--shadow-sm);
+  margin-bottom:2rem;
+}
+.ba-meta{
+  display:inline-block;
+  background:var(--navy);color:#fff;
+  padding:.4rem 1rem;border-radius:4px;
+  font-size:.85rem;font-weight:700;letter-spacing:.05em;
+  margin-bottom:1.25rem;
+}
+.ba-quote{
+  font-family:var(--serif);font-size:1.05rem;
+  color:var(--ink);line-height:1.8;
+  margin-bottom:1.5rem;
+}
+.ba-quote::before{content:"";display:block;width:32px;height:2px;background:var(--gold);margin-bottom:1rem}
+.ba-grid{
+  display:grid;grid-template-columns:1fr auto 1fr;
+  gap:1rem;align-items:center;
+}
+.ba-img{
+  aspect-ratio:1/1;
+  position:relative;
+  box-shadow:inset 0 0 0 1px var(--line);
+}
+.ba-img-label{
+  position:absolute;bottom:.6rem;left:.6rem;z-index:3;
+  background:rgba(15,39,64,.92);color:#fff;
+  font-family:var(--display);font-weight:700;
+  padding:.25rem .8rem;border-radius:3px;
+  font-size:.75rem;letter-spacing:.2em;
+}
+.ba-arrow{
+  width:48px;height:48px;border-radius:50%;
+  background:var(--gold);color:#fff;
+  display:grid;place-items:center;
+  font-size:1.5rem;font-weight:700;
+  box-shadow:var(--shadow-sm);
+}
+.testimonials{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;
+}
+.testi{
+  background:var(--cream);
+  border-radius:10px;padding:1.5rem;
+  border-bottom:3px solid var(--gold);
+  font-size:.95rem;line-height:1.75;
+}
+.testi-stars{color:var(--gold);letter-spacing:.1em;margin-bottom:.5rem;font-size:.9rem}
+.testi-name{
+  margin-top:1rem;font-size:.85rem;color:var(--ink-soft);
+  font-weight:500;
+}
+.testi-photo{
+  width:56px;height:56px;border-radius:50%;
+  margin-bottom:.75rem;
+  overflow:hidden;
+  background:var(--cream-deep);
+}
+.testi-photo img{width:100%;height:100%;object-fit:cover}
+@media(max-width:780px){
+  .testimonials{grid-template-columns:1fr}
+  .ba-grid{grid-template-columns:1fr;gap:.5rem}
+  .ba-arrow{transform:rotate(90deg);margin:0 auto}
+}
+
+/* ===== FEATURES ===== */
+.features{background:linear-gradient(180deg,var(--cream-deep),var(--cream))}
+.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem}
+.feature{
+  background:#fff;border-radius:10px;
+  padding:0;overflow:hidden;
+  box-shadow:var(--shadow-sm);
+  transition:transform .3s, box-shadow .3s;
+}
+.feature:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}
+.feature-img{aspect-ratio:4/3;border-radius:0}
+.feature-body{padding:1.25rem 1.1rem 1.5rem}
+.feature h3{
+  font-family:var(--serif);font-weight:700;
+  font-size:1.05rem;color:var(--navy);
+  margin-bottom:.5rem;
+}
+.feature p{font-size:.88rem;color:var(--ink-soft);line-height:1.65}
+@media(max-width:880px){.feature-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== ACCESS ===== */
+.access{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.access::before{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(circle at 80% 20%,rgba(201,169,97,.15),transparent 50%);
+  pointer-events:none;
+}
+.access .section-eyebrow{color:var(--gold-light)}
+.access .section-title{color:#fff}
+.access-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;
+  margin-top:1rem;
+}
+.access-item{
+  text-align:center;padding:1.5rem 1rem;
+  border:1px solid rgba(201,169,97,.3);
+  border-radius:8px;
+  background:rgba(255,255,255,.03);
+  transition:background .25s;
+}
+.access-item:hover{background:rgba(201,169,97,.08)}
+.access-icon{
+  width:54px;height:54px;margin:0 auto 1rem;
+  border-radius:50%;background:var(--gold);color:var(--navy);
+  display:grid;place-items:center;
+}
+.access-icon svg{width:26px;height:26px;stroke-width:2}
+.access-label{
+  font-family:var(--serif);font-weight:700;
+  font-size:1rem;color:var(--gold-light);
+  margin-bottom:.4rem;
+}
+.access-desc{font-size:.85rem;color:rgba(255,255,255,.8);line-height:1.6}
+@media(max-width:780px){.access-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* ===== CTA ===== */
+.cta{
+  position:relative;
+  color:#fff;text-align:center;
+  padding:5rem 1.5rem;
+  overflow:hidden;
+  background:var(--navy-deep);
+}
+.cta-bg{position:absolute;inset:0;z-index:0}
+.cta-bg img{width:100%;height:100%;object-fit:cover;opacity:.35}
+.cta-bg::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(135deg,rgba(15,39,64,.92),rgba(9,26,44,.95));
+}
+.cta-inner{position:relative;z-index:2}
+.cta-eyebrow{
+  font-family:var(--display);font-size:.85rem;
+  letter-spacing:.5em;color:var(--gold-light);
+  text-transform:uppercase;font-weight:600;
+  margin-bottom:1rem;
+}
+.cta h2{
+  font-family:var(--serif);font-weight:900;
+  font-size:clamp(1.6rem,3vw,2.4rem);
+  line-height:1.5;margin-bottom:1rem;
+}
+.cta h2 em{font-style:normal;color:var(--gold-light)}
+.cta p{
+  max-width:560px;margin:0 auto 2.5rem;
+  font-size:1rem;color:rgba(255,255,255,.85);line-height:1.85;
+}
+.cta-buttons{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn{
+  display:inline-flex;align-items:center;gap:.6rem;
+  padding:1.1rem 2rem;border-radius:999px;
+  font-weight:700;font-size:1rem;
+  transition:transform .2s, box-shadow .2s;
+  letter-spacing:.05em;
+}
+.btn-primary{
+  background:var(--red);color:#fff;
+  box-shadow:0 8px 24px rgba(200,32,43,.4);
+}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(200,32,43,.55)}
+.btn-secondary{
+  background:#06c755;color:#fff;
+  box-shadow:0 8px 24px rgba(6,199,85,.35);
+}
+.btn-secondary:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(6,199,85,.5)}
+.btn-tel-big{
+  background:#fff;color:var(--navy);
+  box-shadow:0 8px 24px rgba(0,0,0,.2);
+  flex-direction:column;gap:.1rem;padding:.85rem 2rem;
+}
+.btn-tel-big small{font-size:.7rem;letter-spacing:.2em;color:var(--ink-soft);font-weight:500}
+.btn-tel-big strong{font-family:var(--display);font-weight:700;font-size:1.5rem;letter-spacing:.02em}
+
+/* ===== FOOTER ===== */
+.footer{
+  background:var(--navy-deep);color:rgba(255,255,255,.7);
+  padding:2.5rem 1.5rem 1.5rem;
+  text-align:center;
+}
+.footer-logo{margin-bottom:1rem;display:inline-flex;gap:.6rem;align-items:center;color:#fff}
+.footer-logo .logo-mark{background:transparent;border:1px solid var(--gold)}
+.footer p{font-size:.85rem;line-height:1.8}
+.footer-divider{
+  width:60px;height:1px;background:var(--gold);
+  margin:1.5rem auto;
+}
+.footer-copy{font-size:.75rem;letter-spacing:.05em;color:rgba(255,255,255,.4)}
+
+/* ===== STICKY MOBILE CTA ===== */
+.sticky-mobile{
+  display:none;
+  position:fixed;bottom:0;left:0;right:0;z-index:60;
+  background:#fff;border-top:1px solid var(--line);
+  padding:.6rem;gap:.5rem;
+  box-shadow:0 -4px 20px rgba(0,0,0,.08);
+}
+.sticky-mobile a{
+  flex:1;text-align:center;padding:.85rem .5rem;
+  border-radius:8px;font-weight:700;font-size:.85rem;
+  display:flex;align-items:center;justify-content:center;gap:.4rem;
+}
+.sticky-mobile .tel-m{background:var(--red);color:#fff}
+.sticky-mobile .line-m{background:#06c755;color:#fff}
+@media(max-width:720px){
+  .sticky-mobile{display:flex}
+  body{padding-bottom:70px}
+}
+
+/* ===== STORES SELECTOR ===== */
+.stores{background:linear-gradient(180deg,var(--cream) 0%, #fff 100%)}
+.stores-layout{
+  display:grid;grid-template-columns:340px 1fr;
+  gap:0;align-items:stretch;
+  background:#fff;border-radius:14px;overflow:hidden;
+  box-shadow:var(--shadow-md);
+  border:1px solid var(--line);
+}
+.store-tabs{
+  display:flex;flex-direction:column;
+  background:linear-gradient(180deg,var(--navy),var(--navy-deep));
+  padding:1.25rem 0;
+}
+.store-tab{
+  display:flex;align-items:center;gap:.9rem;
+  padding:1.1rem 1.5rem;
+  text-align:left;color:rgba(255,255,255,.75);
+  border-left:3px solid transparent;
+  transition:all .25s;position:relative;cursor:pointer;
+}
+.store-tab:hover{color:#fff;background:rgba(255,255,255,.04)}
+.store-tab.active{
+  color:#fff;
+  background:rgba(201,169,97,.12);
+  border-left-color:var(--gold);
+}
+.store-tab.active .store-tab-num{background:var(--gold);color:var(--navy)}
+.store-tab-num{
+  width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.08);
+  display:grid;place-items:center;flex-shrink:0;
+  font-family:var(--display);font-weight:700;
+  font-size:.95rem;
+  transition:all .25s;
+}
+.store-tab-info{flex:1;min-width:0}
+.store-tab-name{
+  font-family:var(--serif);font-weight:700;
+  font-size:.98rem;line-height:1.3;
+  margin-bottom:.15rem;
+}
+.store-tab-station{
+  font-size:.75rem;color:rgba(255,255,255,.6);
+  letter-spacing:.05em;
+}
+.store-tab.active .store-tab-station{color:var(--gold-light)}
+.store-tab-arrow{
+  flex-shrink:0;opacity:0;transform:translateX(-4px);
+  transition:all .25s;color:var(--gold);
+}
+.store-tab.active .store-tab-arrow{opacity:1;transform:translateX(0)}
+
+.store-panel{display:none;padding:2rem 2.25rem;flex-direction:column}
+.store-panel.active{display:flex;animation:fadeIn .4s ease}
+@keyframes fadeIn{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:none}
+}
+.store-photo{
+  aspect-ratio:16/9;border-radius:8px;
+  margin-bottom:1.25rem;
+  border:1px solid var(--line);
+}
+.store-header{
+  padding-bottom:1.25rem;
+  border-bottom:1px solid var(--line);
+  margin-bottom:1.25rem;
+}
+.store-name{
+  font-family:var(--serif);font-weight:900;
+  font-size:1.5rem;color:var(--navy);
+  line-height:1.3;margin-bottom:.4rem;
+}
+.store-name-en{
+  font-family:var(--display);font-style:italic;
+  font-size:.85rem;color:var(--gold);
+  letter-spacing:.15em;
+}
+.store-meta{display:grid;gap:.85rem;margin-bottom:1.25rem}
+.store-meta-row{
+  display:grid;grid-template-columns:90px 1fr;
+  gap:1rem;align-items:start;
+  font-size:.92rem;line-height:1.6;
+}
+.store-meta-label{
+  font-family:var(--serif);font-weight:700;
+  color:var(--navy);font-size:.82rem;
+  letter-spacing:.1em;padding-top:2px;
+  display:flex;align-items:center;gap:.4rem;
+}
+.store-meta-label svg{width:14px;height:14px;color:var(--gold)}
+.store-meta-value{color:var(--ink-soft)}
+.store-meta-value strong{color:var(--ink);font-weight:700}
+.store-map{
+  border-radius:8px;overflow:hidden;
+  aspect-ratio:16/9;
+  border:1px solid var(--line);
+  background:var(--cream-deep);
+  margin-bottom:1.25rem;
+}
+.store-map iframe{width:100%;height:100%;border:0;display:block}
+.store-actions{display:flex;gap:.75rem;flex-wrap:wrap}
+.store-btn{
+  flex:1;min-width:140px;
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1rem;border-radius:8px;
+  font-weight:700;font-size:.9rem;
+  transition:transform .2s, box-shadow .2s;
+}
+.store-btn-tel{background:var(--red);color:#fff;box-shadow:0 4px 14px rgba(200,32,43,.3)}
+.store-btn-tel:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(200,32,43,.45)}
+.store-btn-line{background:#06c755;color:#fff;box-shadow:0 4px 14px rgba(6,199,85,.3)}
+.store-btn-line:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(6,199,85,.45)}
+.store-btn-map{background:var(--cream);color:var(--navy);border:1px solid var(--line)}
+.store-btn-map:hover{background:var(--cream-deep)}
+
+@media(max-width:880px){
+  .stores-layout{grid-template-columns:1fr}
+  .store-tabs{flex-direction:row;overflow-x:auto;padding:.5rem;gap:.25rem}
+  .store-tab{
+    flex-direction:column;flex-shrink:0;min-width:130px;
+    padding:.85rem .75rem;text-align:center;
+    border-left:none;border-bottom:3px solid transparent;
+  }
+  .store-tab.active{border-left-color:transparent;border-bottom-color:var(--gold)}
+  .store-tab-arrow{display:none}
+  .store-tab-info{text-align:center}
+  .store-panel{padding:1.5rem 1.25rem}
+}
+
+/* fade in */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s ease, transform .8s ease}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<!--
+=========================================================
+  画像差し替えガイド
+  すべての画像は <img> タグで設定しています。
+  下記パスに画像を配置するだけで自動で反映されます。
+  画像が無い場合はプレースホルダー柄が表示されます。
+
+  推奨ディレクトリ:  /images/
+
+  必要画像一覧:
+    images/logo.png            … ヘッダー & フッターのロゴマーク（推奨 200x200 / 透過PNG）
+    images/hero.jpg            … メインビジュアル（推奨 800x1000 / 縦長）
+    images/empathy.jpg         … 悩みセクションの写真（推奨 700x700）
+    images/before.jpg          … 改善事例 BEFORE 写真（正方形）
+    images/after.jpg           … 改善事例 AFTER 写真（正方形）
+    images/voice-01.jpg        … お客様の声 1（顔写真・正方形）
+    images/voice-02.jpg        … お客様の声 2
+    images/voice-03.jpg        … お客様の声 3
+    images/feature-01.jpg      … 特徴 1（国家資格者）
+    images/feature-02.jpg      … 特徴 2（カウンセリング）
+    images/feature-03.jpg      … 特徴 3（お子様連れ）
+    images/feature-04.jpg      … 特徴 4（土日営業）
+    images/cta-bg.jpg          … CTA セクションの背景写真（横長）
+    images/store-01.jpg 〜 05  … 各店舗の外観/内観写真（推奨 1600x900）
+=========================================================
+-->
+
+<div class="topbar">
+  <strong>松戸市内4店舗 + 北習志野</strong> ／ 平日最終受付20時 ／ 土日も営業
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">
+      <div class="logo-mark">
+        <img src="images/logo.png" alt="夢の鍼灸整骨院・整体院" onerror="this.style.display='none'">
+      </div>
+      <div class="logo-text">
+        <small>Yume Tokimeki</small>
+        <span>夢の鍼灸整骨院・整体院</span>
+      </div>
+    </a>
+    <div class="header-cta">
+      <div class="tel">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        047-383-8393
+      </div>
+      <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="btn-line" style="background:var(--gold);box-shadow:0 4px 14px rgba(201,169,97,.35);color:var(--navy)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+        ネット予約
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="hero-grid">
+    <div>
+      <div class="eyebrow reveal">For Hernia &amp; Sciatica</div>
+      <h1 class="reveal">
+        <span class="lead">病院や他の整体で良くならなかった</span>
+        <span class="accent">ヘルニア・坐骨神経痛</span>でお悩みのあなたへ
+      </h1>
+      <ul class="hero-checks reveal">
+        <li>朝起きると腰が痛い</li>
+        <li>座るとお尻から足がしびれる</li>
+        <li>歩くと足が重くなる・つらい</li>
+        <li>病院で「手術しかない」と言われた</li>
+      </ul>
+      <div class="hero-tag reveal">
+        <div class="hero-tag-label">姿勢 × 骨格 × 神経 へのアプローチで</div>
+        <div class="hero-tag-main"><em>根本改善</em>を目指します</div>
+      </div>
+    </div>
+    <div class="hero-visual reveal">
+      <!-- ▼ HERO 画像: images/hero.jpg を差し替え -->
+      <div class="hero-img img-frame">
+        <span class="img-placeholder-text">HERO IMAGE<br>images/hero.jpg</span>
+        <img src="images/hero.jpg" alt="ヘルニア・坐骨神経痛の施術" onerror="this.style.display='none'">
+        <div class="pain-marker"></div>
+      </div>
+      <div class="hero-badge">
+        <small>医師も</small>
+        <strong style="font-family:var(--serif);font-size:1.25rem;line-height:1.2">絶賛</strong>
+        <small>の整体</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== EMPATHY ============== -->
+<section class="empathy">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Your Concerns</span>
+      <h2 class="section-title">こんな<em>お悩み</em>ありませんか？</h2>
+    </div>
+    <div class="empathy-grid">
+      <ul class="empathy-list">
+        <li class="empathy-item"><span class="empathy-item-num">01</span>病院では湿布や薬だけで変わらない</li>
+        <li class="empathy-item"><span class="empathy-item-num">02</span>マッサージや電気をしてもすぐ戻る</li>
+        <li class="empathy-item"><span class="empathy-item-num">03</span>手術はしたくない</li>
+        <li class="empathy-item"><span class="empathy-item-num">04</span>この痛みと一生付き合うのかと不安</li>
+      </ul>
+      <!-- ▼ images/empathy.jpg -->
+      <div class="empathy-image img-frame">
+        <span class="img-placeholder-text">EMPATHY IMAGE<br>images/empathy.jpg</span>
+        <img src="images/empathy.jpg" alt="腰の痛みに悩む女性" onerror="this.style.display='none'">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CAUSE ============== -->
+<section class="cause">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Why It Improves</span>
+      <h2 class="section-title">なぜ改善するのか</h2>
+    </div>
+    <p class="cause-headline">
+      根本原因は<span class="mark">姿勢のゆがみ</span>と<span class="mark">神経の圧迫</span>
+    </p>
+    <p class="cause-desc">
+      当院では、姿勢や骨格のゆがみを整え、神経の圧迫を取り除くことで、<br>
+      つらい痛みやしびれの根本改善を目指します。
+    </p>
+    <div class="cause-pillars">
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M9 5l3-3 3 3M9 19l3 3 3-3M5 9l-3 3 3 3M19 9l3 3-3 3"/></svg>
+        </div>
+        <div class="pillar-num">01</div>
+        <h3>姿勢・骨格<br>の調整</h3>
+        <span class="plus">+</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8m0 4v8M2 12h8m4 0h8M5 5l4 4M15 15l4 4M19 5l-4 4M9 15l-4 4"/></svg>
+        </div>
+        <div class="pillar-num">02</div>
+        <h3>神経への<br>アプローチ</h3>
+        <span class="plus">+</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div class="pillar-num">03</div>
+        <h3>自律神経<br>の調整</h3>
+        <span class="plus">+</span>
+      </div>
+      <div class="pillar">
+        <div class="pillar-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M6 4h12v6a6 6 0 0 1-12 0z"/><path d="M9 20h6M12 16v4"/></svg>
+        </div>
+        <div class="pillar-num">04</div>
+        <h3>インナー<br>マッスル強化</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== RESULTS ============== -->
+<section class="results">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Before &amp; After</span>
+      <h2 class="section-title">改善事例 と <em>お客様の声</em></h2>
+    </div>
+
+    <div class="ba-card">
+      <div class="ba-meta">改善事例 ／ 50代男性</div>
+      <p class="ba-quote">
+        「歩くとすぐに足がしびれていましたが、今では長時間歩いても大丈夫になりました。手術しかないと言われていたので本当に良かったです。」
+      </p>
+      <div class="ba-grid">
+        <!-- ▼ images/before.jpg -->
+        <div class="ba-img img-frame">
+          <span class="img-placeholder-text">BEFORE<br>images/before.jpg</span>
+          <img src="images/before.jpg" alt="施術前" onerror="this.style.display='none'">
+          <div class="ba-img-label">BEFORE</div>
+        </div>
+        <div class="ba-arrow">→</div>
+        <!-- ▼ images/after.jpg -->
+        <div class="ba-img img-frame">
+          <span class="img-placeholder-text">AFTER<br>images/after.jpg</span>
+          <img src="images/after.jpg" alt="施術後" onerror="this.style.display='none'">
+          <div class="ba-img-label">AFTER</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials">
+      <div class="testi">
+        <div class="testi-photo img-frame">
+          <img src="images/voice-01.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        朝の痛みがなくなり、仕事が楽になりました！長年悩んでいた腰の痛みが嘘のようです。
+        <div class="testi-name">— 40代 女性 / 事務職</div>
+      </div>
+      <div class="testi">
+        <div class="testi-photo img-frame">
+          <img src="images/voice-02.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        薬を飲まなくても生活できるようになりました。先生が原因をしっかり説明してくれて安心です。
+        <div class="testi-name">— 60代 男性 / 自営業</div>
+      </div>
+      <div class="testi">
+        <div class="testi-photo img-frame">
+          <img src="images/voice-03.jpg" alt="" onerror="this.style.display='none'">
+        </div>
+        <div class="testi-stars">★★★★★</div>
+        手術をせずに改善できて本当に良かった！子どもを抱っこしても痛みが出なくなりました。
+        <div class="testi-name">— 30代 女性 / 主婦</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FEATURES ============== -->
+<section class="features">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Our Strengths</span>
+      <h2 class="section-title">当院の<em>特徴</em></h2>
+    </div>
+    <div class="feature-grid">
+      <div class="feature">
+        <!-- ▼ images/feature-01.jpg -->
+        <div class="feature-img img-frame">
+          <span class="img-placeholder-text">FEATURE 01</span>
+          <img src="images/feature-01.jpg" alt="国家資格者" onerror="this.style.display='none'">
+        </div>
+        <div class="feature-body">
+          <h3>国家資格者が施術</h3>
+          <p>安心・安全の国家資格保有者が担当いたします。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-img img-frame">
+          <span class="img-placeholder-text">FEATURE 02</span>
+          <img src="images/feature-02.jpg" alt="丁寧なカウンセリング" onerror="this.style.display='none'">
+        </div>
+        <div class="feature-body">
+          <h3>丁寧なカウンセリング</h3>
+          <p>痛みの原因をしっかり見極めてから施術します。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-img img-frame">
+          <span class="img-placeholder-text">FEATURE 03</span>
+          <img src="images/feature-03.jpg" alt="お子様連れOK" onerror="this.style.display='none'">
+        </div>
+        <div class="feature-body">
+          <h3>お子様連れOK</h3>
+          <p>ベビーカーのまま来院できます。安心してお越しください。</p>
+        </div>
+      </div>
+      <div class="feature">
+        <div class="feature-img img-frame">
+          <span class="img-placeholder-text">FEATURE 04</span>
+          <img src="images/feature-04.jpg" alt="土日祝も営業" onerror="this.style.display='none'">
+        </div>
+        <div class="feature-body">
+          <h3>土日祝も営業</h3>
+          <p>平日お忙しい方も通いやすい営業体制です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== ACCESS ============== -->
+<section class="access">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Why Easy to Visit</span>
+      <h2 class="section-title">通いやすさへの<em>こだわり</em></h2>
+    </div>
+    <div class="access-grid">
+      <div class="access-item">
+        <div class="access-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16M8 3v4M16 3v4M9 19l-2 3M15 19l2 3"/></svg>
+        </div>
+        <div class="access-label">全店 駅チカ</div>
+        <div class="access-desc">5店舗すべて駅徒歩1〜3分の好立地</div>
+      </div>
+      <div class="access-item">
+        <div class="access-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div class="access-label">平日夜20時まで</div>
+        <div class="access-desc">お仕事帰りでも通えます</div>
+      </div>
+      <div class="access-item">
+        <div class="access-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+        </div>
+        <div class="access-label">土日も営業</div>
+        <div class="access-desc">休日にゆっくり通える</div>
+      </div>
+      <div class="access-item">
+        <div class="access-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M5 17h14M5 17v-5l2-5h10l2 5v5M5 17v2M19 17v2"/><circle cx="8" cy="14" r="1"/><circle cx="16" cy="14" r="1"/></svg>
+        </div>
+        <div class="access-label">駐車場あり</div>
+        <div class="access-desc">みのり台院・八柱院は駐車場完備</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CTA ============== -->
+<section class="cta" id="cta">
+  <!-- ▼ CTA 背景画像: images/cta-bg.jpg -->
+  <div class="cta-bg">
+    <img src="images/cta-bg.jpg" alt="" onerror="this.style.display='none'">
+  </div>
+  <div class="cta-inner">
+    <div class="cta-eyebrow">Reservation</div>
+    <h2>その痛み、もう我慢しない。<br><em>根本改善</em>へ、今すぐ一歩を</h2>
+    <p>
+      医師も絶賛の整体で、つらい痛みやしびれを根本から。<br>
+      お近くの店舗にお気軽にお問い合わせください。
+    </p>
+    <div class="cta-buttons">
+      <a href="tel:047-383-8393" class="btn btn-tel-big">
+        <small>お電話でのご予約</small>
+        <strong>047-383-8393</strong>
+      </a>
+      <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="btn btn-secondary" style="background:var(--gold);color:var(--navy);box-shadow:0 8px 24px rgba(201,169,97,.4)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+        ネットから予約
+      </a>
+      <a href="#stores" class="btn" style="background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4);box-shadow:none">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        店舗を選ぶ
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== STORES ============== -->
+<section class="stores" id="stores">
+  <div class="container">
+    <div class="section-head">
+      <span class="section-eyebrow">Our Locations</span>
+      <h2 class="section-title">通いやすい<em>5店舗</em>展開</h2>
+      <p class="section-sub">お近くの店舗を選んでご予約ください</p>
+    </div>
+
+    <div class="stores-layout reveal">
+      <div class="store-tabs" role="tablist">
+        <button class="store-tab active" data-store="1" role="tab">
+          <span class="store-tab-num">1</span>
+          <span class="store-tab-info">
+            <span class="store-tab-name">みのり台院</span>
+            <span class="store-tab-station">みのり台駅 徒歩1分</span>
+          </span>
+          <svg class="store-tab-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="store-tab" data-store="2" role="tab">
+          <span class="store-tab-num">2</span>
+          <span class="store-tab-info">
+            <span class="store-tab-name">八柱院</span>
+            <span class="store-tab-station">八柱駅 徒歩2分</span>
+          </span>
+          <svg class="store-tab-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="store-tab" data-store="3" role="tab">
+          <span class="store-tab-num">3</span>
+          <span class="store-tab-info">
+            <span class="store-tab-name">松戸院</span>
+            <span class="store-tab-station">松戸駅 徒歩3分</span>
+          </span>
+          <svg class="store-tab-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="store-tab" data-store="4" role="tab">
+          <span class="store-tab-num">4</span>
+          <span class="store-tab-info">
+            <span class="store-tab-name">五香院</span>
+            <span class="store-tab-station">五香駅 徒歩1分</span>
+          </span>
+          <svg class="store-tab-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+        <button class="store-tab" data-store="5" role="tab">
+          <span class="store-tab-num">5</span>
+          <span class="store-tab-info">
+            <span class="store-tab-name">北習志野駅前院 <small style="background:var(--gold);color:var(--navy);font-size:.65rem;padding:.1rem .4rem;border-radius:3px;margin-left:.3rem;font-weight:700;letter-spacing:.05em">NEW</small></span>
+            <span class="store-tab-station">北習志野駅 徒歩すぐ</span>
+          </span>
+          <svg class="store-tab-arrow" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
+      </div>
+
+      <div class="store-panel active" data-store="1" role="tabpanel">
+        <!-- ▼ images/store-01.jpg -->
+        <div class="store-photo img-frame">
+          <span class="img-placeholder-text">STORE 01<br>images/store-01.jpg</span>
+          <img src="images/store-01.jpg" alt="みのり台院" onerror="this.style.display='none'">
+        </div>
+        <div class="store-header">
+          <h3 class="store-name">夢の鍼灸整骨院・整体院 みのり台院</h3>
+          <span class="store-name-en">Minoridai Branch</span>
+        </div>
+        <div class="store-meta">
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</span>
+            <span class="store-meta-value"><strong>千葉県松戸市松戸新田575-25 1F</strong><br>新京成線「みのり台」駅 徒歩1分</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話</span>
+            <span class="store-meta-value"><strong>047-711-8393</strong></span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>受付時間</span>
+            <span class="store-meta-value">平日 10:00〜14:00／16:00〜20:00<br>土日 9:00〜12:00／14:00〜16:00</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/></svg>定休日</span>
+            <span class="store-meta-value">祝日 ／ 駐車場あり</span>
+          </div>
+        </div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E6%88%B8%E6%96%B0%E7%94%B0575-25&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="store-actions">
+          <a href="tel:047-711-8393" class="store-btn store-btn-tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            電話で予約
+          </a>
+          <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="store-btn store-btn-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            ネット予約
+          </a>
+          <a href="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%9D%BE%E6%88%B8%E6%96%B0%E7%94%B0575-25" target="_blank" rel="noopener" class="store-btn store-btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ルートを見る
+          </a>
+        </div>
+      </div>
+
+      <div class="store-panel" data-store="2" role="tabpanel">
+        <div class="store-photo img-frame">
+          <span class="img-placeholder-text">STORE 02<br>images/store-02.jpg</span>
+          <img src="images/store-02.jpg" alt="八柱院" onerror="this.style.display='none'">
+        </div>
+        <div class="store-header">
+          <h3 class="store-name">夢の鍼灸整骨院・整体院 八柱院</h3>
+          <span class="store-name-en">Yabashira Branch</span>
+        </div>
+        <div class="store-meta">
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</span>
+            <span class="store-meta-value"><strong>千葉県松戸市日暮2-5-11 1F</strong><br>新京成線「八柱」駅 徒歩2分</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話</span>
+            <span class="store-meta-value"><strong>047-383-8393</strong></span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>受付時間</span>
+            <span class="store-meta-value">平日 10:00〜14:00／16:00〜20:00<br>土日 9:00〜12:00／14:00〜16:00</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/></svg>定休日</span>
+            <span class="store-meta-value">祝日 ／ 駐車場あり</span>
+          </div>
+        </div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%97%A5%E6%9A%AE2-5-11&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="store-actions">
+          <a href="tel:047-383-8393" class="store-btn store-btn-tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            電話で予約
+          </a>
+          <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="store-btn store-btn-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            ネット予約
+          </a>
+          <a href="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%97%A5%E6%9A%AE2-5-11" target="_blank" rel="noopener" class="store-btn store-btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ルートを見る
+          </a>
+        </div>
+      </div>
+
+      <div class="store-panel" data-store="3" role="tabpanel">
+        <div class="store-photo img-frame">
+          <span class="img-placeholder-text">STORE 03<br>images/store-03.jpg</span>
+          <img src="images/store-03.jpg" alt="松戸院" onerror="this.style.display='none'">
+        </div>
+        <div class="store-header">
+          <h3 class="store-name">夢の鍼灸院・整骨院 松戸院</h3>
+          <span class="store-name-en">Matsudo Branch</span>
+        </div>
+        <div class="store-meta">
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</span>
+            <span class="store-meta-value"><strong>千葉県松戸市根本471 1F</strong><br>JR・新京成線「松戸」駅 徒歩3分</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話</span>
+            <span class="store-meta-value"><strong>047-701-5123</strong></span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>受付時間</span>
+            <span class="store-meta-value">平日 10:00〜14:00／16:00〜20:00<br>土日 9:00〜12:00／14:00〜16:00</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/></svg>定休日</span>
+            <span class="store-meta-value">祝日</span>
+          </div>
+        </div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%B9%E6%9C%AC471&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="store-actions">
+          <a href="tel:047-701-5123" class="store-btn store-btn-tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            電話で予約
+          </a>
+          <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="store-btn store-btn-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            ネット予約
+          </a>
+          <a href="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E6%A0%B9%E6%9C%AC471" target="_blank" rel="noopener" class="store-btn store-btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ルートを見る
+          </a>
+        </div>
+      </div>
+
+      <div class="store-panel" data-store="4" role="tabpanel">
+        <div class="store-photo img-frame">
+          <span class="img-placeholder-text">STORE 04<br>images/store-04.jpg</span>
+          <img src="images/store-04.jpg" alt="五香院" onerror="this.style.display='none'">
+        </div>
+        <div class="store-header">
+          <h3 class="store-name">夢の鍼灸整骨院・整体院 五香院</h3>
+          <span class="store-name-en">Goko Branch</span>
+        </div>
+        <div class="store-meta">
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</span>
+            <span class="store-meta-value"><strong>千葉県松戸市金ヶ作408-143 1F</strong><br>新京成線「五香」駅 徒歩1分</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話</span>
+            <span class="store-meta-value"><strong>047-382-5536</strong></span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>受付時間</span>
+            <span class="store-meta-value">平日 10:00〜14:00／16:00〜20:00<br>土日 9:00〜12:00／14:00〜16:00</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/></svg>定休日</span>
+            <span class="store-meta-value">祝日</span>
+          </div>
+        </div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E9%87%91%E3%83%B6%E4%BD%9C408-143&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="store-actions">
+          <a href="tel:047-382-5536" class="store-btn store-btn-tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            電話で予約
+          </a>
+          <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="store-btn store-btn-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            ネット予約
+          </a>
+          <a href="https://www.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E6%9D%BE%E6%88%B8%E5%B8%82%E9%87%91%E3%83%B6%E4%BD%9C408-143" target="_blank" rel="noopener" class="store-btn store-btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ルートを見る
+          </a>
+        </div>
+      </div>
+
+      <div class="store-panel" data-store="5" role="tabpanel">
+        <div class="store-photo img-frame">
+          <span class="img-placeholder-text">STORE 05<br>images/store-05.jpg</span>
+          <img src="images/store-05.jpg" alt="北習志野駅前院" onerror="this.style.display='none'">
+        </div>
+        <div class="store-header">
+          <h3 class="store-name">夢の鍼灸整骨院・整体院 北習志野駅前院 <span style="display:inline-block;background:var(--gold);color:var(--navy);font-size:.7rem;padding:.15rem .55rem;border-radius:3px;margin-left:.4rem;font-weight:700;letter-spacing:.05em;vertical-align:middle">NEW OPEN</span></h3>
+          <span class="store-name-en">Kita-Narashino Branch</span>
+        </div>
+        <div class="store-meta">
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>住所</span>
+            <span class="store-meta-value"><strong>千葉県船橋市西習志野</strong><br>京成線「北習志野」駅前</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>電話</span>
+            <span class="store-meta-value"><strong>準備中</strong>（本部：047-383-8393）</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>受付時間</span>
+            <span class="store-meta-value">平日 10:00〜14:00／16:00〜20:00<br>土日 9:00〜12:00／14:00〜16:00</span>
+          </div>
+          <div class="store-meta-row">
+            <span class="store-meta-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="16" rx="2"/><path d="M4 11h16"/></svg>オープン</span>
+            <span class="store-meta-value">2025年6月16日オープン</span>
+          </div>
+        </div>
+        <div class="store-map">
+          <iframe src="https://www.google.com/maps?q=%E5%8C%97%E7%BF%92%E5%BF%97%E9%87%8E%E9%A7%85&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+        <div class="store-actions">
+          <a href="tel:047-383-8393" class="store-btn store-btn-tel">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            本部に電話
+          </a>
+          <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="store-btn store-btn-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            ネット予約
+          </a>
+          <a href="https://www.google.com/maps?q=%E5%8C%97%E7%BF%92%E5%BF%97%E9%87%8E%E9%A7%85" target="_blank" rel="noopener" class="store-btn store-btn-map">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            ルートを見る
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-logo">
+    <div class="logo-mark">
+      <img src="images/logo.png" alt="" onerror="this.style.display='none'">
+    </div>
+    <div class="logo-text">
+      <small>Yume Tokimeki</small>
+      <span>夢の鍼灸整骨院・整体院</span>
+    </div>
+  </div>
+  <p>千葉県松戸市内4店舗 ＋ 船橋市北習志野（計5店舗）<br>本部：047-383-8393</p>
+  <div class="footer-divider"></div>
+  <p class="footer-copy">© 2026 夢の鍼灸整骨院・整体院 All Rights Reserved.</p>
+</footer>
+
+<!-- STICKY MOBILE -->
+<div class="sticky-mobile">
+  <a href="tel:047-383-8393" class="tel-m">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    電話で予約
+  </a>
+  <a href="https://yume-tokimeki.com/contact" target="_blank" rel="noopener" class="line-m" style="background:var(--gold);color:var(--navy)">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+    ネット予約
+  </a>
+</div>
+
+<script>
+// reveal on scroll
+const io = new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}
+  });
+},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// store tabs
+const storeTabs = document.querySelectorAll('.store-tab');
+const storePanels = document.querySelectorAll('.store-panel');
+storeTabs.forEach(tab=>{
+  tab.addEventListener('click',()=>{
+    const id = tab.dataset.store;
+    storeTabs.forEach(t=>t.classList.remove('active'));
+    storePanels.forEach(p=>p.classList.remove('active'));
+    tab.classList.add('active');
+    document.querySelector(`.store-panel[data-store="${id}"]`).classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
