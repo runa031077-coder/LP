@@ -96,20 +96,21 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 .logo{display:flex;align-items:center;gap:.6rem}
 .logo-mark{
-  width:38px;height:38px;border-radius:50%;
-  background:linear-gradient(135deg,var(--navy),var(--navy-deep));
+  width:44px;height:44px;border-radius:8px;
+  background:transparent;
   display:grid;place-items:center;
   color:var(--gold-light);font-family:var(--display);font-size:1.35rem;font-weight:700;
-  box-shadow:var(--shadow-sm);
-  overflow:hidden;
+  overflow:visible;
   position:relative;
+  flex-shrink:0;
 }
 .logo-mark::before{
-  content:"夢";position:absolute;inset:0;
-  display:grid;place-items:center;
-  font-family:var(--serif);font-weight:900;
+  content:"";display:none;
 }
-.logo-mark img{width:100%;height:100%;object-fit:cover;position:relative;z-index:2}
+.logo-mark img{
+  width:100%;height:100%;object-fit:contain;position:relative;z-index:2;
+  display:block;
+}
 .logo-text{display:flex;flex-direction:column;line-height:1.1}
 .logo-text small{font-family:var(--display);font-size:.65rem;letter-spacing:.3em;color:var(--gold);text-transform:uppercase}
 .logo-text span{font-family:var(--serif);font-weight:700;font-size:.95rem;color:var(--navy)}
@@ -133,7 +134,7 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .header-inner{padding:.7rem .85rem}
 }
 @media(max-width:480px){
-  .logo-mark{width:34px;height:34px;font-size:1.15rem}
+  .logo-mark{width:38px;height:38px;font-size:1.15rem}
   .logo-text small{font-size:.6rem;letter-spacing:.2em}
   .logo-text span{font-size:.85rem}
   .btn-line{padding:.5rem .85rem;font-size:.78rem}
@@ -671,7 +672,7 @@ section{padding:4.5rem 1.5rem}
   text-align:center;
 }
 .footer-logo{margin-bottom:1rem;display:inline-flex;gap:.6rem;align-items:center;color:#fff}
-.footer-logo .logo-mark{background:transparent;border:1px solid var(--gold)}
+.footer-logo .logo-mark{background:transparent;border:none;width:48px;height:48px}
 .footer p{font-size:.85rem;line-height:1.8}
 .footer-divider{
   width:60px;height:1px;background:var(--gold);
